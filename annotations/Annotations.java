@@ -1,33 +1,22 @@
 package com.annotations;
-class  Xyz
-{
-	
-	int x ;
-	Xyz(int x)
-	{
-		this.x=x;
-	}
-	
-	
-	@Deprecated
-	void test()
-	{
-		System.out.println("Testing");
-	}
-	
 
-	
+class Base
+{
+     public void display()
+     {
+         System.out.println("Base display()");
+     }
 }
-
-
-public class Annotations
+class Annotations extends Base
 {
-	@SuppressWarnings({"deprecation"})
-	public static void main (String args[])
-	{
-		
-		Xyz x= new Xyz(5);
-		x.test();
-		System.out.println(x);
-	}
+     @Override
+     public void display()
+     {
+         System.out.println("Annotations display");
+     }
+     public static void main(String args[])
+     {
+         Annotations obj = new Annotations();
+         obj.display();
+     }
 }

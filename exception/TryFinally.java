@@ -6,16 +6,14 @@ public class TryFinally {
 		// TODO Auto-generated method stub
 
 		int arr[] = new int[2];
-		try
-		{
-			arr[3]=3;
+		try {
+			arr[3] = 3;
 		}
-		
-		finally
-		{
+
+		finally {
 			System.out.println("Exception");
 		}
-		
+
 	}
 
 }

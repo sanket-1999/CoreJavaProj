@@ -50,5 +50,3 @@ public class PingpongHasA implements Runnable{
 	
 	}
 }	
-			
-		
