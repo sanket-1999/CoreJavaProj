@@ -9,7 +9,7 @@ public class Filedetails {
 		// TODO Auto-generated method stub
 
 		File f = new File("F://ibm");
-		File[] list = f.listFiles();
+		File list[] = f.listFiles();
 
 		System.out.println("Files");
 		for (File files : list) {

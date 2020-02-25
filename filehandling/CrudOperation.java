@@ -66,8 +66,8 @@ public class CrudOperation {
 		raf.writeInt(ao.getAccount_no());
 		raf.writeUTF(ao.getName());
 		raf.writeDouble(ao.getBalance());
-		System.out.println("AccountOperation:  name=" + ao.getName() + ", account_no=" + ao.getAccount_no()
-				+ ", balance=" + ao.getBalance());
+		System.out.println("AccountOperation:  name="+ao.getName()+", account_no=" +ao.getAccount_no()
+				+ ", balance=" +ao.getBalance());
 		System.out.println("Account created.....");
 		raf.close();
 		return null;
@@ -137,7 +137,7 @@ public class CrudOperation {
 		updateAccount();
 		readAccount();
 		deleteAccount();
-		readAccount();
+		readAccount(); 
 		System.out.println("Done");
 
 	}

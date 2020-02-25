@@ -30,7 +30,6 @@ class Account {
 
 public class AccountTest {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		Scanner sc = new Scanner(System.in);
 		Account ac = new Account(12, "sanket", 10000);
 		File file = new File("F:\\IBM\\acc.txt");
 		FileOutputStream fos = new FileOutputStream(file);

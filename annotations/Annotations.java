@@ -1,22 +1,22 @@
 package com.annotations;
 
-class Base
-{
-     public void display()
-     {
-         System.out.println("Base display()");
-     }
+interface Base {
+	@Deprecated
+	int x = 10;
+
+	void print();
 }
-class Annotations extends Base
-{
-     @Override
-     public void display()
-     {
-         System.out.println("Annotations display");
-     }
-     public static void main(String args[])
-     {
-         Annotations obj = new Annotations();
-         obj.display();
-     }
+
+class Annotations implements Base {
+	@Override
+	public void print() {
+		System.out.println("Overriden Print From Base");
+	}
+
+	@SuppressWarnings({ "deprecation" })
+	public static void main(String[] args) {
+		Base a = new Annotations();
+		a.print();
+		System.out.println(a.x);
+	}
 }

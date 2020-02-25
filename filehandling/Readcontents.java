@@ -18,6 +18,7 @@ public class Readcontents {
 			System.out.print((char) i);
 		}
 		sis.close();
+		si.close();
 		fin1.close();
 		fin2.close();
 		fin3.close();
