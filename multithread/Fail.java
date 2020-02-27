@@ -3,11 +3,11 @@ package com.multithread;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PingpongHasA implements Runnable {
+public class Fail implements Runnable {
 
 	Thread t1, t2;
 
-	public PingpongHasA() {
+	public Fail() {
 		t1 = new Thread(this);
 		t2 = new Thread(this);
 		t1.setName("add");
@@ -19,7 +19,7 @@ public class PingpongHasA implements Runnable {
 	public static ArrayList<String> alist = new ArrayList<String>();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new PingpongHasA();
+		new Fail();
 	}
 
 	@Override
