@@ -4,6 +4,7 @@ import java.awt.List;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListq3 {
 
@@ -15,8 +16,10 @@ public class ArrayListq3 {
 		alist.add("PQR");
 		alist.add("XYZ");
 
-		for (int i = alist.size() - 1; i >= 0; i--) {
-			System.out.println(alist.get(i));
+		ListIterator<String> i = alist.listIterator(alist.size());
+
+		while(i.hasPrevious()){
+		  System.out.println(i.previous());
 		}
 
 	}

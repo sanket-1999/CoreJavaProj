@@ -25,7 +25,7 @@ class Test {
 
 	public boolean equals() {
 
-		return true;
+		return false;
 
 	}
 

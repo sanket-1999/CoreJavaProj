@@ -1,14 +1,13 @@
-package com.multithread;
+package com.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.concurrent.CopyOnWriteArrayList;
 
-public class FailConcurrent implements Runnable {
+public class Fail implements Runnable {
 
 	Thread t1, t2;
 
-	public FailConcurrent() {
+	public Fail() {
 		t1 = new Thread(this);
 		t2 = new Thread(this);
 		t1.setName("add");
@@ -17,10 +16,10 @@ public class FailConcurrent implements Runnable {
 		t2.start();
 	}
 
-	public static CopyOnWriteArrayList<String> alist = new CopyOnWriteArrayList<String>(); 
+	public static ArrayList<String> alist = new ArrayList<String>();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new FailConcurrent();
+		new Fail();
 	}
 
 	@Override
